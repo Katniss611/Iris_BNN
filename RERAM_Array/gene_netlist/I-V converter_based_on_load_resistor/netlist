@@ -1,0 +1,1270 @@
+** Generated for: hspiceD
+** Generated on: Jan 15 22:05:11 2023
+** Design library name: testRohm_n
+** Design cell name: BNN_IRIS_A_1
+** Design view name: schematic
+
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+
+** Library name: testRohm_n
+** Cell name: INVA_iris_1
+** View name: schematic
+.subckt INVA_iris_1 out outb vb vdbl vin
+m0 outb net77 0 0 N L=180e-9 W=2e-6
+m2 out outb 0 0 N L=180e-9 W=2e-6
+m1 outb net77 net78 net78 P L=180e-9 W=5e-6
+m3 out outb net78 net78 P L=180e-9 W=5e-6
+m23 net77 vdbl net76 0 N L=200e-9 W=40e-6
+m22 net75 vin net76 0 N L=200e-9 W=40e-6
+m24 net76 vb 0 0 N L=200e-9 W=40e-6
+r0 vin 0 112e3
+m20 net77 net75 net78 net78 P L=200e-9 W=40e-6
+m21 net78 net75 net75 net78 P L=200e-9 W=40e-6
+v0 net78 0 DC=1.8
+.ends INVA_iris_1
+** End of subcircuit definition.
+
+** Library name: testRohm_n
+** Cell name: cellP
+** View name: schematic
+.subckt cellP vbl wl11 wl11b
+v0 net30 0 DC=1.8
+m0 net30 wl11 net28 net30 P L=180e-9 W=5e-6
+m1 net29 wl11b net30 net30 P L=180e-9 W=5e-6
+r0 net28 vbl R 10e6
+r1 net29 vbl R 900e3
+.ends cellP
+** End of subcircuit definition.
+
+** Library name: testRohm_n
+** Cell name: cellN
+** View name: schematic
+.subckt cellN vbl wl11 wl11b
+v0 net30 0 DC=1.8
+m0 net30 wl11 net28 net30 P L=180e-9 W=5e-6
+m1 net29 wl11b net30 net30 P L=180e-9 W=5e-6
+r0 net28 vbl R 900e3
+r1 net29 vbl R 10e6
+.ends cellN
+** End of subcircuit definition.
+
+xl1i1 bl1_1 wl1_1 wl1_1b cellN
+xl1i2 bl1_2 wl1_1 wl1_1b cellN
+xl1i3 bl1_3 wl1_1 wl1_1b cellN
+xl1i4 bl1_4 wl1_1 wl1_1b cellP
+xl1i5 bl1_5 wl1_1 wl1_1b cellN
+xl1i6 bl1_6 wl1_1 wl1_1b cellN
+xl1i7 bl1_7 wl1_1 wl1_1b cellP
+xl1i8 bl1_8 wl1_1 wl1_1b cellN
+xl1i9 bl1_9 wl1_1 wl1_1b cellN
+xl1i10 bl1_10 wl1_1 wl1_1b cellP
+xl1i11 bl1_11 wl1_1 wl1_1b cellN
+xl1i12 bl1_12 wl1_1 wl1_1b cellN
+xl1i13 bl1_13 wl1_1 wl1_1b cellN
+xl1i14 bl1_14 wl1_1 wl1_1b cellP
+xl1i15 bl1_15 wl1_1 wl1_1b cellP
+xl1i16 bl1_16 wl1_1 wl1_1b cellP
+xl1i17 bl1_17 wl1_1 wl1_1b cellN
+xl1i18 bl1_18 wl1_1 wl1_1b cellN
+xl1i19 bl1_19 wl1_1 wl1_1b cellN
+xl1i20 bl1_20 wl1_1 wl1_1b cellN
+xl1i21 bl1_21 wl1_1 wl1_1b cellN
+xl1i22 bl1_22 wl1_1 wl1_1b cellN
+xl1i23 bl1_23 wl1_1 wl1_1b cellP
+xl1i24 bl1_24 wl1_1 wl1_1b cellP
+xl1i25 bl1_25 wl1_1 wl1_1b cellP
+xl1i26 bl1_26 wl1_1 wl1_1b cellP
+xl1i27 bl1_27 wl1_1 wl1_1b cellN
+xl1i28 bl1_28 wl1_1 wl1_1b cellN
+xl1i29 bl1_29 wl1_1 wl1_1b cellN
+xl1i30 bl1_30 wl1_1 wl1_1b cellN
+xl1i31 bl1_31 wl1_1 wl1_1b cellN
+xl1i32 bl1_32 wl1_1 wl1_1b cellP
+xl1i33 bl1_33 wl1_1 wl1_1b cellP
+xl1i34 bl1_34 wl1_1 wl1_1b cellP
+xl1i35 bl1_35 wl1_1 wl1_1b cellN
+xl1i36 bl1_36 wl1_1 wl1_1b cellN
+xl1i37 bl1_37 wl1_1 wl1_1b cellN
+xl1i38 bl1_38 wl1_1 wl1_1b cellN
+xl1i39 bl1_39 wl1_1 wl1_1b cellN
+xl1i40 bl1_40 wl1_1 wl1_1b cellP
+xl1i41 bl1_41 wl1_1 wl1_1b cellN
+xl1i42 bl1_42 wl1_1 wl1_1b cellN
+xl1i43 bl1_43 wl1_1 wl1_1b cellN
+xl1i44 bl1_44 wl1_1 wl1_1b cellP
+xl1i45 bl1_45 wl1_1 wl1_1b cellN
+xl1i46 bl1_46 wl1_1 wl1_1b cellN
+xl1i47 bl1_47 wl1_1 wl1_1b cellN
+xl1i48 bl1_48 wl1_1 wl1_1b cellN
+xl1i49 bl1_49 wl1_1 wl1_1b cellN
+xl1i50 bl1_50 wl1_1 wl1_1b cellN
+xl1i51 bl1_51 wl1_1 wl1_1b cellP
+xl1i52 bl1_52 wl1_1 wl1_1b cellN
+xl1i53 bl1_53 wl1_1 wl1_1b cellN
+xl1i54 bl1_54 wl1_1 wl1_1b cellP
+xl1i55 bl1_55 wl1_1 wl1_1b cellP
+xl1i56 bl1_56 wl1_1 wl1_1b cellP
+xl1i57 bl1_57 wl1_1 wl1_1b cellN
+xl1i58 bl1_58 wl1_1 wl1_1b cellP
+xl1i59 bl1_59 wl1_1 wl1_1b cellN
+xl1i60 bl1_60 wl1_1 wl1_1b cellP
+xl1i61 bl1_61 wl1_1 wl1_1b cellP
+xl1i62 bl1_62 wl1_1 wl1_1b cellN
+xl1i63 bl1_63 wl1_1 wl1_1b cellP
+xl1i64 bl1_64 wl1_1 wl1_1b cellP
+xl1i65 bl1_65 wl1_1 wl1_1b cellN
+xl1i66 bl1_66 wl1_1 wl1_1b cellN
+xl1i67 bl1_67 wl1_1 wl1_1b cellP
+xl1i68 bl1_68 wl1_1 wl1_1b cellN
+xl1i69 bl1_69 wl1_1 wl1_1b cellN
+xl1i70 bl1_70 wl1_1 wl1_1b cellP
+xl1i71 bl1_71 wl1_1 wl1_1b cellN
+xl1i72 bl1_72 wl1_1 wl1_1b cellN
+xl1i73 bl1_73 wl1_1 wl1_1b cellP
+xl1i74 bl1_74 wl1_1 wl1_1b cellN
+xl1i75 bl1_75 wl1_1 wl1_1b cellN
+xl1i76 bl1_76 wl1_1 wl1_1b cellP
+xl1i77 bl1_77 wl1_1 wl1_1b cellN
+xl1i78 bl1_78 wl1_1 wl1_1b cellN
+xl1i79 bl1_79 wl1_1 wl1_1b cellP
+xl1i80 bl1_80 wl1_1 wl1_1b cellN
+xl1i81 bl1_81 wl1_1 wl1_1b cellP
+xl1i82 bl1_82 wl1_1 wl1_1b cellP
+xl1i83 bl1_83 wl1_1 wl1_1b cellN
+xl1i84 bl1_84 wl1_1 wl1_1b cellN
+xl1i85 bl1_85 wl1_1 wl1_1b cellP
+xl1i86 bl1_86 wl1_1 wl1_1b cellN
+xl1i87 bl1_87 wl1_1 wl1_1b cellN
+xl1i88 bl1_88 wl1_1 wl1_1b cellP
+xl1i89 bl1_89 wl1_1 wl1_1b cellP
+xl1i90 bl1_90 wl1_1 wl1_1b cellP
+xl1i91 bl1_91 wl1_1 wl1_1b cellP
+xl1i92 bl1_92 wl1_1 wl1_1b cellN
+xl1i93 bl1_93 wl1_1 wl1_1b cellP
+xl1i94 bl1_94 wl1_1 wl1_1b cellP
+xl1i95 bl1_95 wl1_1 wl1_1b cellN
+xl1i96 bl1_96 wl1_1 wl1_1b cellP
+xl1i97 bl1_97 wl1_1 wl1_1b cellN
+xl1i98 bl1_98 wl1_1 wl1_1b cellP
+xl1i99 bl1_99 wl1_1 wl1_1b cellP
+xl1i100 bl1_100 wl1_1 wl1_1b cellN
+xl1i101 bl1_1 wl1_2 wl1_2b cellP
+xl1i102 bl1_2 wl1_2 wl1_2b cellN
+xl1i103 bl1_3 wl1_2 wl1_2b cellN
+xl1i104 bl1_4 wl1_2 wl1_2b cellN
+xl1i105 bl1_5 wl1_2 wl1_2b cellN
+xl1i106 bl1_6 wl1_2 wl1_2b cellN
+xl1i107 bl1_7 wl1_2 wl1_2b cellN
+xl1i108 bl1_8 wl1_2 wl1_2b cellP
+xl1i109 bl1_9 wl1_2 wl1_2b cellP
+xl1i110 bl1_10 wl1_2 wl1_2b cellP
+xl1i111 bl1_11 wl1_2 wl1_2b cellN
+xl1i112 bl1_12 wl1_2 wl1_2b cellP
+xl1i113 bl1_13 wl1_2 wl1_2b cellN
+xl1i114 bl1_14 wl1_2 wl1_2b cellP
+xl1i115 bl1_15 wl1_2 wl1_2b cellP
+xl1i116 bl1_16 wl1_2 wl1_2b cellN
+xl1i117 bl1_17 wl1_2 wl1_2b cellN
+xl1i118 bl1_18 wl1_2 wl1_2b cellN
+xl1i119 bl1_19 wl1_2 wl1_2b cellN
+xl1i120 bl1_20 wl1_2 wl1_2b cellP
+xl1i121 bl1_21 wl1_2 wl1_2b cellP
+xl1i122 bl1_22 wl1_2 wl1_2b cellN
+xl1i123 bl1_23 wl1_2 wl1_2b cellN
+xl1i124 bl1_24 wl1_2 wl1_2b cellP
+xl1i125 bl1_25 wl1_2 wl1_2b cellP
+xl1i126 bl1_26 wl1_2 wl1_2b cellN
+xl1i127 bl1_27 wl1_2 wl1_2b cellP
+xl1i128 bl1_28 wl1_2 wl1_2b cellP
+xl1i129 bl1_29 wl1_2 wl1_2b cellN
+xl1i130 bl1_30 wl1_2 wl1_2b cellP
+xl1i131 bl1_31 wl1_2 wl1_2b cellN
+xl1i132 bl1_32 wl1_2 wl1_2b cellP
+xl1i133 bl1_33 wl1_2 wl1_2b cellP
+xl1i134 bl1_34 wl1_2 wl1_2b cellP
+xl1i135 bl1_35 wl1_2 wl1_2b cellP
+xl1i136 bl1_36 wl1_2 wl1_2b cellN
+xl1i137 bl1_37 wl1_2 wl1_2b cellN
+xl1i138 bl1_38 wl1_2 wl1_2b cellP
+xl1i139 bl1_39 wl1_2 wl1_2b cellP
+xl1i140 bl1_40 wl1_2 wl1_2b cellN
+xl1i141 bl1_41 wl1_2 wl1_2b cellP
+xl1i142 bl1_42 wl1_2 wl1_2b cellP
+xl1i143 bl1_43 wl1_2 wl1_2b cellN
+xl1i144 bl1_44 wl1_2 wl1_2b cellN
+xl1i145 bl1_45 wl1_2 wl1_2b cellN
+xl1i146 bl1_46 wl1_2 wl1_2b cellP
+xl1i147 bl1_47 wl1_2 wl1_2b cellP
+xl1i148 bl1_48 wl1_2 wl1_2b cellP
+xl1i149 bl1_49 wl1_2 wl1_2b cellN
+xl1i150 bl1_50 wl1_2 wl1_2b cellN
+xl1i151 bl1_51 wl1_2 wl1_2b cellN
+xl1i152 bl1_52 wl1_2 wl1_2b cellN
+xl1i153 bl1_53 wl1_2 wl1_2b cellN
+xl1i154 bl1_54 wl1_2 wl1_2b cellN
+xl1i155 bl1_55 wl1_2 wl1_2b cellP
+xl1i156 bl1_56 wl1_2 wl1_2b cellN
+xl1i157 bl1_57 wl1_2 wl1_2b cellN
+xl1i158 bl1_58 wl1_2 wl1_2b cellP
+xl1i159 bl1_59 wl1_2 wl1_2b cellN
+xl1i160 bl1_60 wl1_2 wl1_2b cellP
+xl1i161 bl1_61 wl1_2 wl1_2b cellP
+xl1i162 bl1_62 wl1_2 wl1_2b cellP
+xl1i163 bl1_63 wl1_2 wl1_2b cellP
+xl1i164 bl1_64 wl1_2 wl1_2b cellN
+xl1i165 bl1_65 wl1_2 wl1_2b cellP
+xl1i166 bl1_66 wl1_2 wl1_2b cellN
+xl1i167 bl1_67 wl1_2 wl1_2b cellN
+xl1i168 bl1_68 wl1_2 wl1_2b cellP
+xl1i169 bl1_69 wl1_2 wl1_2b cellN
+xl1i170 bl1_70 wl1_2 wl1_2b cellP
+xl1i171 bl1_71 wl1_2 wl1_2b cellP
+xl1i172 bl1_72 wl1_2 wl1_2b cellN
+xl1i173 bl1_73 wl1_2 wl1_2b cellP
+xl1i174 bl1_74 wl1_2 wl1_2b cellP
+xl1i175 bl1_75 wl1_2 wl1_2b cellN
+xl1i176 bl1_76 wl1_2 wl1_2b cellP
+xl1i177 bl1_77 wl1_2 wl1_2b cellN
+xl1i178 bl1_78 wl1_2 wl1_2b cellN
+xl1i179 bl1_79 wl1_2 wl1_2b cellN
+xl1i180 bl1_80 wl1_2 wl1_2b cellN
+xl1i181 bl1_81 wl1_2 wl1_2b cellN
+xl1i182 bl1_82 wl1_2 wl1_2b cellN
+xl1i183 bl1_83 wl1_2 wl1_2b cellP
+xl1i184 bl1_84 wl1_2 wl1_2b cellN
+xl1i185 bl1_85 wl1_2 wl1_2b cellP
+xl1i186 bl1_86 wl1_2 wl1_2b cellP
+xl1i187 bl1_87 wl1_2 wl1_2b cellN
+xl1i188 bl1_88 wl1_2 wl1_2b cellP
+xl1i189 bl1_89 wl1_2 wl1_2b cellP
+xl1i190 bl1_90 wl1_2 wl1_2b cellN
+xl1i191 bl1_91 wl1_2 wl1_2b cellP
+xl1i192 bl1_92 wl1_2 wl1_2b cellP
+xl1i193 bl1_93 wl1_2 wl1_2b cellP
+xl1i194 bl1_94 wl1_2 wl1_2b cellP
+xl1i195 bl1_95 wl1_2 wl1_2b cellN
+xl1i196 bl1_96 wl1_2 wl1_2b cellP
+xl1i197 bl1_97 wl1_2 wl1_2b cellP
+xl1i198 bl1_98 wl1_2 wl1_2b cellN
+xl1i199 bl1_99 wl1_2 wl1_2b cellN
+xl1i200 bl1_100 wl1_2 wl1_2b cellP
+xl1i201 bl1_1 wl1_3 wl1_3b cellP
+xl1i202 bl1_2 wl1_3 wl1_3b cellN
+xl1i203 bl1_3 wl1_3 wl1_3b cellN
+xl1i204 bl1_4 wl1_3 wl1_3b cellP
+xl1i205 bl1_5 wl1_3 wl1_3b cellP
+xl1i206 bl1_6 wl1_3 wl1_3b cellP
+xl1i207 bl1_7 wl1_3 wl1_3b cellN
+xl1i208 bl1_8 wl1_3 wl1_3b cellP
+xl1i209 bl1_9 wl1_3 wl1_3b cellN
+xl1i210 bl1_10 wl1_3 wl1_3b cellN
+xl1i211 bl1_11 wl1_3 wl1_3b cellP
+xl1i212 bl1_12 wl1_3 wl1_3b cellN
+xl1i213 bl1_13 wl1_3 wl1_3b cellP
+xl1i214 bl1_14 wl1_3 wl1_3b cellP
+xl1i215 bl1_15 wl1_3 wl1_3b cellN
+xl1i216 bl1_16 wl1_3 wl1_3b cellP
+xl1i217 bl1_17 wl1_3 wl1_3b cellP
+xl1i218 bl1_18 wl1_3 wl1_3b cellN
+xl1i219 bl1_19 wl1_3 wl1_3b cellP
+xl1i220 bl1_20 wl1_3 wl1_3b cellN
+xl1i221 bl1_21 wl1_3 wl1_3b cellP
+xl1i222 bl1_22 wl1_3 wl1_3b cellP
+xl1i223 bl1_23 wl1_3 wl1_3b cellP
+xl1i224 bl1_24 wl1_3 wl1_3b cellP
+xl1i225 bl1_25 wl1_3 wl1_3b cellN
+xl1i226 bl1_26 wl1_3 wl1_3b cellP
+xl1i227 bl1_27 wl1_3 wl1_3b cellN
+xl1i228 bl1_28 wl1_3 wl1_3b cellN
+xl1i229 bl1_29 wl1_3 wl1_3b cellN
+xl1i230 bl1_30 wl1_3 wl1_3b cellN
+xl1i231 bl1_31 wl1_3 wl1_3b cellP
+xl1i232 bl1_32 wl1_3 wl1_3b cellN
+xl1i233 bl1_33 wl1_3 wl1_3b cellN
+xl1i234 bl1_34 wl1_3 wl1_3b cellP
+xl1i235 bl1_35 wl1_3 wl1_3b cellN
+xl1i236 bl1_36 wl1_3 wl1_3b cellN
+xl1i237 bl1_37 wl1_3 wl1_3b cellN
+xl1i238 bl1_38 wl1_3 wl1_3b cellN
+xl1i239 bl1_39 wl1_3 wl1_3b cellP
+xl1i240 bl1_40 wl1_3 wl1_3b cellN
+xl1i241 bl1_41 wl1_3 wl1_3b cellN
+xl1i242 bl1_42 wl1_3 wl1_3b cellP
+xl1i243 bl1_43 wl1_3 wl1_3b cellP
+xl1i244 bl1_44 wl1_3 wl1_3b cellP
+xl1i245 bl1_45 wl1_3 wl1_3b cellN
+xl1i246 bl1_46 wl1_3 wl1_3b cellN
+xl1i247 bl1_47 wl1_3 wl1_3b cellP
+xl1i248 bl1_48 wl1_3 wl1_3b cellP
+xl1i249 bl1_49 wl1_3 wl1_3b cellN
+xl1i250 bl1_50 wl1_3 wl1_3b cellN
+xl1i251 bl1_51 wl1_3 wl1_3b cellN
+xl1i252 bl1_52 wl1_3 wl1_3b cellP
+xl1i253 bl1_53 wl1_3 wl1_3b cellN
+xl1i254 bl1_54 wl1_3 wl1_3b cellP
+xl1i255 bl1_55 wl1_3 wl1_3b cellN
+xl1i256 bl1_56 wl1_3 wl1_3b cellN
+xl1i257 bl1_57 wl1_3 wl1_3b cellN
+xl1i258 bl1_58 wl1_3 wl1_3b cellP
+xl1i259 bl1_59 wl1_3 wl1_3b cellP
+xl1i260 bl1_60 wl1_3 wl1_3b cellN
+xl1i261 bl1_61 wl1_3 wl1_3b cellP
+xl1i262 bl1_62 wl1_3 wl1_3b cellN
+xl1i263 bl1_63 wl1_3 wl1_3b cellP
+xl1i264 bl1_64 wl1_3 wl1_3b cellN
+xl1i265 bl1_65 wl1_3 wl1_3b cellN
+xl1i266 bl1_66 wl1_3 wl1_3b cellP
+xl1i267 bl1_67 wl1_3 wl1_3b cellP
+xl1i268 bl1_68 wl1_3 wl1_3b cellN
+xl1i269 bl1_69 wl1_3 wl1_3b cellN
+xl1i270 bl1_70 wl1_3 wl1_3b cellN
+xl1i271 bl1_71 wl1_3 wl1_3b cellN
+xl1i272 bl1_72 wl1_3 wl1_3b cellN
+xl1i273 bl1_73 wl1_3 wl1_3b cellP
+xl1i274 bl1_74 wl1_3 wl1_3b cellN
+xl1i275 bl1_75 wl1_3 wl1_3b cellP
+xl1i276 bl1_76 wl1_3 wl1_3b cellP
+xl1i277 bl1_77 wl1_3 wl1_3b cellP
+xl1i278 bl1_78 wl1_3 wl1_3b cellN
+xl1i279 bl1_79 wl1_3 wl1_3b cellP
+xl1i280 bl1_80 wl1_3 wl1_3b cellP
+xl1i281 bl1_81 wl1_3 wl1_3b cellN
+xl1i282 bl1_82 wl1_3 wl1_3b cellP
+xl1i283 bl1_83 wl1_3 wl1_3b cellN
+xl1i284 bl1_84 wl1_3 wl1_3b cellN
+xl1i285 bl1_85 wl1_3 wl1_3b cellP
+xl1i286 bl1_86 wl1_3 wl1_3b cellP
+xl1i287 bl1_87 wl1_3 wl1_3b cellP
+xl1i288 bl1_88 wl1_3 wl1_3b cellP
+xl1i289 bl1_89 wl1_3 wl1_3b cellP
+xl1i290 bl1_90 wl1_3 wl1_3b cellN
+xl1i291 bl1_91 wl1_3 wl1_3b cellP
+xl1i292 bl1_92 wl1_3 wl1_3b cellN
+xl1i293 bl1_93 wl1_3 wl1_3b cellP
+xl1i294 bl1_94 wl1_3 wl1_3b cellN
+xl1i295 bl1_95 wl1_3 wl1_3b cellP
+xl1i296 bl1_96 wl1_3 wl1_3b cellN
+xl1i297 bl1_97 wl1_3 wl1_3b cellN
+xl1i298 bl1_98 wl1_3 wl1_3b cellN
+xl1i299 bl1_99 wl1_3 wl1_3b cellP
+xl1i300 bl1_100 wl1_3 wl1_3b cellN
+xl1i301 bl1_1 wl1_4 wl1_4b cellN
+xl1i302 bl1_2 wl1_4 wl1_4b cellN
+xl1i303 bl1_3 wl1_4 wl1_4b cellN
+xl1i304 bl1_4 wl1_4 wl1_4b cellP
+xl1i305 bl1_5 wl1_4 wl1_4b cellP
+xl1i306 bl1_6 wl1_4 wl1_4b cellP
+xl1i307 bl1_7 wl1_4 wl1_4b cellN
+xl1i308 bl1_8 wl1_4 wl1_4b cellP
+xl1i309 bl1_9 wl1_4 wl1_4b cellP
+xl1i310 bl1_10 wl1_4 wl1_4b cellP
+xl1i311 bl1_11 wl1_4 wl1_4b cellP
+xl1i312 bl1_12 wl1_4 wl1_4b cellN
+xl1i313 bl1_13 wl1_4 wl1_4b cellN
+xl1i314 bl1_14 wl1_4 wl1_4b cellP
+xl1i315 bl1_15 wl1_4 wl1_4b cellN
+xl1i316 bl1_16 wl1_4 wl1_4b cellP
+xl1i317 bl1_17 wl1_4 wl1_4b cellP
+xl1i318 bl1_18 wl1_4 wl1_4b cellP
+xl1i319 bl1_19 wl1_4 wl1_4b cellN
+xl1i320 bl1_20 wl1_4 wl1_4b cellN
+xl1i321 bl1_21 wl1_4 wl1_4b cellP
+xl1i322 bl1_22 wl1_4 wl1_4b cellP
+xl1i323 bl1_23 wl1_4 wl1_4b cellP
+xl1i324 bl1_24 wl1_4 wl1_4b cellN
+xl1i325 bl1_25 wl1_4 wl1_4b cellN
+xl1i326 bl1_26 wl1_4 wl1_4b cellP
+xl1i327 bl1_27 wl1_4 wl1_4b cellP
+xl1i328 bl1_28 wl1_4 wl1_4b cellN
+xl1i329 bl1_29 wl1_4 wl1_4b cellP
+xl1i330 bl1_30 wl1_4 wl1_4b cellN
+xl1i331 bl1_31 wl1_4 wl1_4b cellP
+xl1i332 bl1_32 wl1_4 wl1_4b cellP
+xl1i333 bl1_33 wl1_4 wl1_4b cellN
+xl1i334 bl1_34 wl1_4 wl1_4b cellN
+xl1i335 bl1_35 wl1_4 wl1_4b cellP
+xl1i336 bl1_36 wl1_4 wl1_4b cellN
+xl1i337 bl1_37 wl1_4 wl1_4b cellP
+xl1i338 bl1_38 wl1_4 wl1_4b cellN
+xl1i339 bl1_39 wl1_4 wl1_4b cellN
+xl1i340 bl1_40 wl1_4 wl1_4b cellN
+xl1i341 bl1_41 wl1_4 wl1_4b cellP
+xl1i342 bl1_42 wl1_4 wl1_4b cellN
+xl1i343 bl1_43 wl1_4 wl1_4b cellP
+xl1i344 bl1_44 wl1_4 wl1_4b cellP
+xl1i345 bl1_45 wl1_4 wl1_4b cellN
+xl1i346 bl1_46 wl1_4 wl1_4b cellN
+xl1i347 bl1_47 wl1_4 wl1_4b cellP
+xl1i348 bl1_48 wl1_4 wl1_4b cellP
+xl1i349 bl1_49 wl1_4 wl1_4b cellN
+xl1i350 bl1_50 wl1_4 wl1_4b cellP
+xl1i351 bl1_51 wl1_4 wl1_4b cellP
+xl1i352 bl1_52 wl1_4 wl1_4b cellP
+xl1i353 bl1_53 wl1_4 wl1_4b cellN
+xl1i354 bl1_54 wl1_4 wl1_4b cellN
+xl1i355 bl1_55 wl1_4 wl1_4b cellN
+xl1i356 bl1_56 wl1_4 wl1_4b cellN
+xl1i357 bl1_57 wl1_4 wl1_4b cellN
+xl1i358 bl1_58 wl1_4 wl1_4b cellP
+xl1i359 bl1_59 wl1_4 wl1_4b cellN
+xl1i360 bl1_60 wl1_4 wl1_4b cellN
+xl1i361 bl1_61 wl1_4 wl1_4b cellN
+xl1i362 bl1_62 wl1_4 wl1_4b cellN
+xl1i363 bl1_63 wl1_4 wl1_4b cellP
+xl1i364 bl1_64 wl1_4 wl1_4b cellP
+xl1i365 bl1_65 wl1_4 wl1_4b cellP
+xl1i366 bl1_66 wl1_4 wl1_4b cellP
+xl1i367 bl1_67 wl1_4 wl1_4b cellP
+xl1i368 bl1_68 wl1_4 wl1_4b cellP
+xl1i369 bl1_69 wl1_4 wl1_4b cellP
+xl1i370 bl1_70 wl1_4 wl1_4b cellN
+xl1i371 bl1_71 wl1_4 wl1_4b cellP
+xl1i372 bl1_72 wl1_4 wl1_4b cellP
+xl1i373 bl1_73 wl1_4 wl1_4b cellP
+xl1i374 bl1_74 wl1_4 wl1_4b cellN
+xl1i375 bl1_75 wl1_4 wl1_4b cellP
+xl1i376 bl1_76 wl1_4 wl1_4b cellN
+xl1i377 bl1_77 wl1_4 wl1_4b cellP
+xl1i378 bl1_78 wl1_4 wl1_4b cellP
+xl1i379 bl1_79 wl1_4 wl1_4b cellN
+xl1i380 bl1_80 wl1_4 wl1_4b cellP
+xl1i381 bl1_81 wl1_4 wl1_4b cellN
+xl1i382 bl1_82 wl1_4 wl1_4b cellP
+xl1i383 bl1_83 wl1_4 wl1_4b cellP
+xl1i384 bl1_84 wl1_4 wl1_4b cellP
+xl1i385 bl1_85 wl1_4 wl1_4b cellP
+xl1i386 bl1_86 wl1_4 wl1_4b cellP
+xl1i387 bl1_87 wl1_4 wl1_4b cellP
+xl1i388 bl1_88 wl1_4 wl1_4b cellP
+xl1i389 bl1_89 wl1_4 wl1_4b cellN
+xl1i390 bl1_90 wl1_4 wl1_4b cellN
+xl1i391 bl1_91 wl1_4 wl1_4b cellN
+xl1i392 bl1_92 wl1_4 wl1_4b cellP
+xl1i393 bl1_93 wl1_4 wl1_4b cellP
+xl1i394 bl1_94 wl1_4 wl1_4b cellN
+xl1i395 bl1_95 wl1_4 wl1_4b cellP
+xl1i396 bl1_96 wl1_4 wl1_4b cellP
+xl1i397 bl1_97 wl1_4 wl1_4b cellN
+xl1i398 bl1_98 wl1_4 wl1_4b cellN
+xl1i399 bl1_99 wl1_4 wl1_4b cellP
+xl1i400 bl1_100 wl1_4 wl1_4b cellN
+xl1i401 bl1_1 wl1_5 wl1_5b cellP
+xl1i402 bl1_2 wl1_5 wl1_5b cellN
+xl1i403 bl1_3 wl1_5 wl1_5b cellP
+xl1i404 bl1_4 wl1_5 wl1_5b cellP
+xl1i405 bl1_5 wl1_5 wl1_5b cellN
+xl1i406 bl1_6 wl1_5 wl1_5b cellN
+xl1i407 bl1_7 wl1_5 wl1_5b cellN
+xl1i408 bl1_8 wl1_5 wl1_5b cellN
+xl1i409 bl1_9 wl1_5 wl1_5b cellP
+xl1i410 bl1_10 wl1_5 wl1_5b cellP
+xl1i411 bl1_11 wl1_5 wl1_5b cellP
+xl1i412 bl1_12 wl1_5 wl1_5b cellP
+xl1i413 bl1_13 wl1_5 wl1_5b cellP
+xl1i414 bl1_14 wl1_5 wl1_5b cellN
+xl1i415 bl1_15 wl1_5 wl1_5b cellN
+xl1i416 bl1_16 wl1_5 wl1_5b cellP
+xl1i417 bl1_17 wl1_5 wl1_5b cellN
+xl1i418 bl1_18 wl1_5 wl1_5b cellP
+xl1i419 bl1_19 wl1_5 wl1_5b cellN
+xl1i420 bl1_20 wl1_5 wl1_5b cellP
+xl1i421 bl1_21 wl1_5 wl1_5b cellN
+xl1i422 bl1_22 wl1_5 wl1_5b cellN
+xl1i423 bl1_23 wl1_5 wl1_5b cellN
+xl1i424 bl1_24 wl1_5 wl1_5b cellN
+xl1i425 bl1_25 wl1_5 wl1_5b cellP
+xl1i426 bl1_26 wl1_5 wl1_5b cellN
+xl1i427 bl1_27 wl1_5 wl1_5b cellN
+xl1i428 bl1_28 wl1_5 wl1_5b cellN
+xl1i429 bl1_29 wl1_5 wl1_5b cellP
+xl1i430 bl1_30 wl1_5 wl1_5b cellP
+xl1i431 bl1_31 wl1_5 wl1_5b cellP
+xl1i432 bl1_32 wl1_5 wl1_5b cellP
+xl1i433 bl1_33 wl1_5 wl1_5b cellP
+xl1i434 bl1_34 wl1_5 wl1_5b cellN
+xl1i435 bl1_35 wl1_5 wl1_5b cellP
+xl1i436 bl1_36 wl1_5 wl1_5b cellP
+xl1i437 bl1_37 wl1_5 wl1_5b cellP
+xl1i438 bl1_38 wl1_5 wl1_5b cellP
+xl1i439 bl1_39 wl1_5 wl1_5b cellP
+xl1i440 bl1_40 wl1_5 wl1_5b cellP
+xl1i441 bl1_41 wl1_5 wl1_5b cellN
+xl1i442 bl1_42 wl1_5 wl1_5b cellN
+xl1i443 bl1_43 wl1_5 wl1_5b cellN
+xl1i444 bl1_44 wl1_5 wl1_5b cellP
+xl1i445 bl1_45 wl1_5 wl1_5b cellP
+xl1i446 bl1_46 wl1_5 wl1_5b cellN
+xl1i447 bl1_47 wl1_5 wl1_5b cellN
+xl1i448 bl1_48 wl1_5 wl1_5b cellP
+xl1i449 bl1_49 wl1_5 wl1_5b cellP
+xl1i450 bl1_50 wl1_5 wl1_5b cellP
+xl1i451 bl1_51 wl1_5 wl1_5b cellN
+xl1i452 bl1_52 wl1_5 wl1_5b cellN
+xl1i453 bl1_53 wl1_5 wl1_5b cellP
+xl1i454 bl1_54 wl1_5 wl1_5b cellP
+xl1i455 bl1_55 wl1_5 wl1_5b cellP
+xl1i456 bl1_56 wl1_5 wl1_5b cellN
+xl1i457 bl1_57 wl1_5 wl1_5b cellN
+xl1i458 bl1_58 wl1_5 wl1_5b cellN
+xl1i459 bl1_59 wl1_5 wl1_5b cellN
+xl1i460 bl1_60 wl1_5 wl1_5b cellN
+xl1i461 bl1_61 wl1_5 wl1_5b cellP
+xl1i462 bl1_62 wl1_5 wl1_5b cellP
+xl1i463 bl1_63 wl1_5 wl1_5b cellP
+xl1i464 bl1_64 wl1_5 wl1_5b cellP
+xl1i465 bl1_65 wl1_5 wl1_5b cellP
+xl1i466 bl1_66 wl1_5 wl1_5b cellN
+xl1i467 bl1_67 wl1_5 wl1_5b cellN
+xl1i468 bl1_68 wl1_5 wl1_5b cellN
+xl1i469 bl1_69 wl1_5 wl1_5b cellP
+xl1i470 bl1_70 wl1_5 wl1_5b cellP
+xl1i471 bl1_71 wl1_5 wl1_5b cellP
+xl1i472 bl1_72 wl1_5 wl1_5b cellP
+xl1i473 bl1_73 wl1_5 wl1_5b cellN
+xl1i474 bl1_74 wl1_5 wl1_5b cellP
+xl1i475 bl1_75 wl1_5 wl1_5b cellN
+xl1i476 bl1_76 wl1_5 wl1_5b cellN
+xl1i477 bl1_77 wl1_5 wl1_5b cellP
+xl1i478 bl1_78 wl1_5 wl1_5b cellN
+xl1i479 bl1_79 wl1_5 wl1_5b cellN
+xl1i480 bl1_80 wl1_5 wl1_5b cellN
+xl1i481 bl1_81 wl1_5 wl1_5b cellP
+xl1i482 bl1_82 wl1_5 wl1_5b cellN
+xl1i483 bl1_83 wl1_5 wl1_5b cellN
+xl1i484 bl1_84 wl1_5 wl1_5b cellP
+xl1i485 bl1_85 wl1_5 wl1_5b cellN
+xl1i486 bl1_86 wl1_5 wl1_5b cellN
+xl1i487 bl1_87 wl1_5 wl1_5b cellP
+xl1i488 bl1_88 wl1_5 wl1_5b cellN
+xl1i489 bl1_89 wl1_5 wl1_5b cellP
+xl1i490 bl1_90 wl1_5 wl1_5b cellN
+xl1i491 bl1_91 wl1_5 wl1_5b cellN
+xl1i492 bl1_92 wl1_5 wl1_5b cellN
+xl1i493 bl1_93 wl1_5 wl1_5b cellN
+xl1i494 bl1_94 wl1_5 wl1_5b cellP
+xl1i495 bl1_95 wl1_5 wl1_5b cellP
+xl1i496 bl1_96 wl1_5 wl1_5b cellN
+xl1i497 bl1_97 wl1_5 wl1_5b cellP
+xl1i498 bl1_98 wl1_5 wl1_5b cellP
+xl1i499 bl1_99 wl1_5 wl1_5b cellP
+xl1i500 bl1_100 wl1_5 wl1_5b cellP
+xl1i501 bl1_1 wl1_6 wl1_6b cellP
+xl1i502 bl1_2 wl1_6 wl1_6b cellN
+xl1i503 bl1_3 wl1_6 wl1_6b cellP
+xl1i504 bl1_4 wl1_6 wl1_6b cellN
+xl1i505 bl1_5 wl1_6 wl1_6b cellN
+xl1i506 bl1_6 wl1_6 wl1_6b cellN
+xl1i507 bl1_7 wl1_6 wl1_6b cellN
+xl1i508 bl1_8 wl1_6 wl1_6b cellP
+xl1i509 bl1_9 wl1_6 wl1_6b cellN
+xl1i510 bl1_10 wl1_6 wl1_6b cellN
+xl1i511 bl1_11 wl1_6 wl1_6b cellP
+xl1i512 bl1_12 wl1_6 wl1_6b cellN
+xl1i513 bl1_13 wl1_6 wl1_6b cellN
+xl1i514 bl1_14 wl1_6 wl1_6b cellP
+xl1i515 bl1_15 wl1_6 wl1_6b cellN
+xl1i516 bl1_16 wl1_6 wl1_6b cellP
+xl1i517 bl1_17 wl1_6 wl1_6b cellN
+xl1i518 bl1_18 wl1_6 wl1_6b cellP
+xl1i519 bl1_19 wl1_6 wl1_6b cellP
+xl1i520 bl1_20 wl1_6 wl1_6b cellN
+xl1i521 bl1_21 wl1_6 wl1_6b cellN
+xl1i522 bl1_22 wl1_6 wl1_6b cellN
+xl1i523 bl1_23 wl1_6 wl1_6b cellN
+xl1i524 bl1_24 wl1_6 wl1_6b cellN
+xl1i525 bl1_25 wl1_6 wl1_6b cellP
+xl1i526 bl1_26 wl1_6 wl1_6b cellN
+xl1i527 bl1_27 wl1_6 wl1_6b cellN
+xl1i528 bl1_28 wl1_6 wl1_6b cellN
+xl1i529 bl1_29 wl1_6 wl1_6b cellN
+xl1i530 bl1_30 wl1_6 wl1_6b cellP
+xl1i531 bl1_31 wl1_6 wl1_6b cellP
+xl1i532 bl1_32 wl1_6 wl1_6b cellN
+xl1i533 bl1_33 wl1_6 wl1_6b cellN
+xl1i534 bl1_34 wl1_6 wl1_6b cellN
+xl1i535 bl1_35 wl1_6 wl1_6b cellN
+xl1i536 bl1_36 wl1_6 wl1_6b cellP
+xl1i537 bl1_37 wl1_6 wl1_6b cellP
+xl1i538 bl1_38 wl1_6 wl1_6b cellN
+xl1i539 bl1_39 wl1_6 wl1_6b cellN
+xl1i540 bl1_40 wl1_6 wl1_6b cellP
+xl1i541 bl1_41 wl1_6 wl1_6b cellP
+xl1i542 bl1_42 wl1_6 wl1_6b cellN
+xl1i543 bl1_43 wl1_6 wl1_6b cellP
+xl1i544 bl1_44 wl1_6 wl1_6b cellN
+xl1i545 bl1_45 wl1_6 wl1_6b cellP
+xl1i546 bl1_46 wl1_6 wl1_6b cellP
+xl1i547 bl1_47 wl1_6 wl1_6b cellN
+xl1i548 bl1_48 wl1_6 wl1_6b cellP
+xl1i549 bl1_49 wl1_6 wl1_6b cellP
+xl1i550 bl1_50 wl1_6 wl1_6b cellP
+xl1i551 bl1_51 wl1_6 wl1_6b cellN
+xl1i552 bl1_52 wl1_6 wl1_6b cellP
+xl1i553 bl1_53 wl1_6 wl1_6b cellN
+xl1i554 bl1_54 wl1_6 wl1_6b cellN
+xl1i555 bl1_55 wl1_6 wl1_6b cellP
+xl1i556 bl1_56 wl1_6 wl1_6b cellN
+xl1i557 bl1_57 wl1_6 wl1_6b cellN
+xl1i558 bl1_58 wl1_6 wl1_6b cellN
+xl1i559 bl1_59 wl1_6 wl1_6b cellN
+xl1i560 bl1_60 wl1_6 wl1_6b cellP
+xl1i561 bl1_61 wl1_6 wl1_6b cellN
+xl1i562 bl1_62 wl1_6 wl1_6b cellP
+xl1i563 bl1_63 wl1_6 wl1_6b cellN
+xl1i564 bl1_64 wl1_6 wl1_6b cellP
+xl1i565 bl1_65 wl1_6 wl1_6b cellP
+xl1i566 bl1_66 wl1_6 wl1_6b cellN
+xl1i567 bl1_67 wl1_6 wl1_6b cellP
+xl1i568 bl1_68 wl1_6 wl1_6b cellP
+xl1i569 bl1_69 wl1_6 wl1_6b cellP
+xl1i570 bl1_70 wl1_6 wl1_6b cellP
+xl1i571 bl1_71 wl1_6 wl1_6b cellN
+xl1i572 bl1_72 wl1_6 wl1_6b cellP
+xl1i573 bl1_73 wl1_6 wl1_6b cellP
+xl1i574 bl1_74 wl1_6 wl1_6b cellP
+xl1i575 bl1_75 wl1_6 wl1_6b cellP
+xl1i576 bl1_76 wl1_6 wl1_6b cellP
+xl1i577 bl1_77 wl1_6 wl1_6b cellP
+xl1i578 bl1_78 wl1_6 wl1_6b cellN
+xl1i579 bl1_79 wl1_6 wl1_6b cellN
+xl1i580 bl1_80 wl1_6 wl1_6b cellP
+xl1i581 bl1_81 wl1_6 wl1_6b cellN
+xl1i582 bl1_82 wl1_6 wl1_6b cellP
+xl1i583 bl1_83 wl1_6 wl1_6b cellN
+xl1i584 bl1_84 wl1_6 wl1_6b cellP
+xl1i585 bl1_85 wl1_6 wl1_6b cellP
+xl1i586 bl1_86 wl1_6 wl1_6b cellN
+xl1i587 bl1_87 wl1_6 wl1_6b cellP
+xl1i588 bl1_88 wl1_6 wl1_6b cellP
+xl1i589 bl1_89 wl1_6 wl1_6b cellP
+xl1i590 bl1_90 wl1_6 wl1_6b cellN
+xl1i591 bl1_91 wl1_6 wl1_6b cellP
+xl1i592 bl1_92 wl1_6 wl1_6b cellP
+xl1i593 bl1_93 wl1_6 wl1_6b cellN
+xl1i594 bl1_94 wl1_6 wl1_6b cellN
+xl1i595 bl1_95 wl1_6 wl1_6b cellN
+xl1i596 bl1_96 wl1_6 wl1_6b cellN
+xl1i597 bl1_97 wl1_6 wl1_6b cellN
+xl1i598 bl1_98 wl1_6 wl1_6b cellP
+xl1i599 bl1_99 wl1_6 wl1_6b cellP
+xl1i600 bl1_100 wl1_6 wl1_6b cellP
+xl1i601 bl1_1 wl1_7 wl1_7b cellP
+xl1i602 bl1_2 wl1_7 wl1_7b cellP
+xl1i603 bl1_3 wl1_7 wl1_7b cellN
+xl1i604 bl1_4 wl1_7 wl1_7b cellN
+xl1i605 bl1_5 wl1_7 wl1_7b cellP
+xl1i606 bl1_6 wl1_7 wl1_7b cellP
+xl1i607 bl1_7 wl1_7 wl1_7b cellN
+xl1i608 bl1_8 wl1_7 wl1_7b cellN
+xl1i609 bl1_9 wl1_7 wl1_7b cellN
+xl1i610 bl1_10 wl1_7 wl1_7b cellN
+xl1i611 bl1_11 wl1_7 wl1_7b cellP
+xl1i612 bl1_12 wl1_7 wl1_7b cellN
+xl1i613 bl1_13 wl1_7 wl1_7b cellN
+xl1i614 bl1_14 wl1_7 wl1_7b cellP
+xl1i615 bl1_15 wl1_7 wl1_7b cellP
+xl1i616 bl1_16 wl1_7 wl1_7b cellN
+xl1i617 bl1_17 wl1_7 wl1_7b cellP
+xl1i618 bl1_18 wl1_7 wl1_7b cellN
+xl1i619 bl1_19 wl1_7 wl1_7b cellP
+xl1i620 bl1_20 wl1_7 wl1_7b cellP
+xl1i621 bl1_21 wl1_7 wl1_7b cellN
+xl1i622 bl1_22 wl1_7 wl1_7b cellN
+xl1i623 bl1_23 wl1_7 wl1_7b cellN
+xl1i624 bl1_24 wl1_7 wl1_7b cellN
+xl1i625 bl1_25 wl1_7 wl1_7b cellP
+xl1i626 bl1_26 wl1_7 wl1_7b cellP
+xl1i627 bl1_27 wl1_7 wl1_7b cellN
+xl1i628 bl1_28 wl1_7 wl1_7b cellP
+xl1i629 bl1_29 wl1_7 wl1_7b cellN
+xl1i630 bl1_30 wl1_7 wl1_7b cellN
+xl1i631 bl1_31 wl1_7 wl1_7b cellN
+xl1i632 bl1_32 wl1_7 wl1_7b cellP
+xl1i633 bl1_33 wl1_7 wl1_7b cellP
+xl1i634 bl1_34 wl1_7 wl1_7b cellP
+xl1i635 bl1_35 wl1_7 wl1_7b cellN
+xl1i636 bl1_36 wl1_7 wl1_7b cellP
+xl1i637 bl1_37 wl1_7 wl1_7b cellP
+xl1i638 bl1_38 wl1_7 wl1_7b cellP
+xl1i639 bl1_39 wl1_7 wl1_7b cellN
+xl1i640 bl1_40 wl1_7 wl1_7b cellP
+xl1i641 bl1_41 wl1_7 wl1_7b cellP
+xl1i642 bl1_42 wl1_7 wl1_7b cellN
+xl1i643 bl1_43 wl1_7 wl1_7b cellP
+xl1i644 bl1_44 wl1_7 wl1_7b cellP
+xl1i645 bl1_45 wl1_7 wl1_7b cellP
+xl1i646 bl1_46 wl1_7 wl1_7b cellP
+xl1i647 bl1_47 wl1_7 wl1_7b cellN
+xl1i648 bl1_48 wl1_7 wl1_7b cellN
+xl1i649 bl1_49 wl1_7 wl1_7b cellP
+xl1i650 bl1_50 wl1_7 wl1_7b cellN
+xl1i651 bl1_51 wl1_7 wl1_7b cellP
+xl1i652 bl1_52 wl1_7 wl1_7b cellP
+xl1i653 bl1_53 wl1_7 wl1_7b cellN
+xl1i654 bl1_54 wl1_7 wl1_7b cellN
+xl1i655 bl1_55 wl1_7 wl1_7b cellP
+xl1i656 bl1_56 wl1_7 wl1_7b cellN
+xl1i657 bl1_57 wl1_7 wl1_7b cellN
+xl1i658 bl1_58 wl1_7 wl1_7b cellN
+xl1i659 bl1_59 wl1_7 wl1_7b cellN
+xl1i660 bl1_60 wl1_7 wl1_7b cellP
+xl1i661 bl1_61 wl1_7 wl1_7b cellP
+xl1i662 bl1_62 wl1_7 wl1_7b cellP
+xl1i663 bl1_63 wl1_7 wl1_7b cellP
+xl1i664 bl1_64 wl1_7 wl1_7b cellP
+xl1i665 bl1_65 wl1_7 wl1_7b cellN
+xl1i666 bl1_66 wl1_7 wl1_7b cellP
+xl1i667 bl1_67 wl1_7 wl1_7b cellP
+xl1i668 bl1_68 wl1_7 wl1_7b cellN
+xl1i669 bl1_69 wl1_7 wl1_7b cellN
+xl1i670 bl1_70 wl1_7 wl1_7b cellN
+xl1i671 bl1_71 wl1_7 wl1_7b cellP
+xl1i672 bl1_72 wl1_7 wl1_7b cellN
+xl1i673 bl1_73 wl1_7 wl1_7b cellP
+xl1i674 bl1_74 wl1_7 wl1_7b cellP
+xl1i675 bl1_75 wl1_7 wl1_7b cellN
+xl1i676 bl1_76 wl1_7 wl1_7b cellN
+xl1i677 bl1_77 wl1_7 wl1_7b cellP
+xl1i678 bl1_78 wl1_7 wl1_7b cellN
+xl1i679 bl1_79 wl1_7 wl1_7b cellN
+xl1i680 bl1_80 wl1_7 wl1_7b cellP
+xl1i681 bl1_81 wl1_7 wl1_7b cellP
+xl1i682 bl1_82 wl1_7 wl1_7b cellN
+xl1i683 bl1_83 wl1_7 wl1_7b cellP
+xl1i684 bl1_84 wl1_7 wl1_7b cellN
+xl1i685 bl1_85 wl1_7 wl1_7b cellP
+xl1i686 bl1_86 wl1_7 wl1_7b cellN
+xl1i687 bl1_87 wl1_7 wl1_7b cellN
+xl1i688 bl1_88 wl1_7 wl1_7b cellN
+xl1i689 bl1_89 wl1_7 wl1_7b cellN
+xl1i690 bl1_90 wl1_7 wl1_7b cellN
+xl1i691 bl1_91 wl1_7 wl1_7b cellN
+xl1i692 bl1_92 wl1_7 wl1_7b cellN
+xl1i693 bl1_93 wl1_7 wl1_7b cellN
+xl1i694 bl1_94 wl1_7 wl1_7b cellN
+xl1i695 bl1_95 wl1_7 wl1_7b cellN
+xl1i696 bl1_96 wl1_7 wl1_7b cellN
+xl1i697 bl1_97 wl1_7 wl1_7b cellN
+xl1i698 bl1_98 wl1_7 wl1_7b cellN
+xl1i699 bl1_99 wl1_7 wl1_7b cellP
+xl1i700 bl1_100 wl1_7 wl1_7b cellP
+xl1i701 bl1_1 wl1_8 wl1_8b cellN
+xl1i702 bl1_2 wl1_8 wl1_8b cellN
+xl1i703 bl1_3 wl1_8 wl1_8b cellN
+xl1i704 bl1_4 wl1_8 wl1_8b cellP
+xl1i705 bl1_5 wl1_8 wl1_8b cellP
+xl1i706 bl1_6 wl1_8 wl1_8b cellN
+xl1i707 bl1_7 wl1_8 wl1_8b cellN
+xl1i708 bl1_8 wl1_8 wl1_8b cellN
+xl1i709 bl1_9 wl1_8 wl1_8b cellP
+xl1i710 bl1_10 wl1_8 wl1_8b cellP
+xl1i711 bl1_11 wl1_8 wl1_8b cellP
+xl1i712 bl1_12 wl1_8 wl1_8b cellN
+xl1i713 bl1_13 wl1_8 wl1_8b cellP
+xl1i714 bl1_14 wl1_8 wl1_8b cellP
+xl1i715 bl1_15 wl1_8 wl1_8b cellN
+xl1i716 bl1_16 wl1_8 wl1_8b cellP
+xl1i717 bl1_17 wl1_8 wl1_8b cellP
+xl1i718 bl1_18 wl1_8 wl1_8b cellP
+xl1i719 bl1_19 wl1_8 wl1_8b cellN
+xl1i720 bl1_20 wl1_8 wl1_8b cellP
+xl1i721 bl1_21 wl1_8 wl1_8b cellP
+xl1i722 bl1_22 wl1_8 wl1_8b cellN
+xl1i723 bl1_23 wl1_8 wl1_8b cellP
+xl1i724 bl1_24 wl1_8 wl1_8b cellP
+xl1i725 bl1_25 wl1_8 wl1_8b cellP
+xl1i726 bl1_26 wl1_8 wl1_8b cellP
+xl1i727 bl1_27 wl1_8 wl1_8b cellN
+xl1i728 bl1_28 wl1_8 wl1_8b cellN
+xl1i729 bl1_29 wl1_8 wl1_8b cellP
+xl1i730 bl1_30 wl1_8 wl1_8b cellN
+xl1i731 bl1_31 wl1_8 wl1_8b cellN
+xl1i732 bl1_32 wl1_8 wl1_8b cellP
+xl1i733 bl1_33 wl1_8 wl1_8b cellP
+xl1i734 bl1_34 wl1_8 wl1_8b cellP
+xl1i735 bl1_35 wl1_8 wl1_8b cellP
+xl1i736 bl1_36 wl1_8 wl1_8b cellP
+xl1i737 bl1_37 wl1_8 wl1_8b cellP
+xl1i738 bl1_38 wl1_8 wl1_8b cellP
+xl1i739 bl1_39 wl1_8 wl1_8b cellN
+xl1i740 bl1_40 wl1_8 wl1_8b cellP
+xl1i741 bl1_41 wl1_8 wl1_8b cellN
+xl1i742 bl1_42 wl1_8 wl1_8b cellN
+xl1i743 bl1_43 wl1_8 wl1_8b cellN
+xl1i744 bl1_44 wl1_8 wl1_8b cellN
+xl1i745 bl1_45 wl1_8 wl1_8b cellN
+xl1i746 bl1_46 wl1_8 wl1_8b cellN
+xl1i747 bl1_47 wl1_8 wl1_8b cellP
+xl1i748 bl1_48 wl1_8 wl1_8b cellP
+xl1i749 bl1_49 wl1_8 wl1_8b cellP
+xl1i750 bl1_50 wl1_8 wl1_8b cellN
+xl1i751 bl1_51 wl1_8 wl1_8b cellP
+xl1i752 bl1_52 wl1_8 wl1_8b cellP
+xl1i753 bl1_53 wl1_8 wl1_8b cellP
+xl1i754 bl1_54 wl1_8 wl1_8b cellP
+xl1i755 bl1_55 wl1_8 wl1_8b cellP
+xl1i756 bl1_56 wl1_8 wl1_8b cellP
+xl1i757 bl1_57 wl1_8 wl1_8b cellN
+xl1i758 bl1_58 wl1_8 wl1_8b cellP
+xl1i759 bl1_59 wl1_8 wl1_8b cellN
+xl1i760 bl1_60 wl1_8 wl1_8b cellN
+xl1i761 bl1_61 wl1_8 wl1_8b cellP
+xl1i762 bl1_62 wl1_8 wl1_8b cellP
+xl1i763 bl1_63 wl1_8 wl1_8b cellN
+xl1i764 bl1_64 wl1_8 wl1_8b cellP
+xl1i765 bl1_65 wl1_8 wl1_8b cellN
+xl1i766 bl1_66 wl1_8 wl1_8b cellP
+xl1i767 bl1_67 wl1_8 wl1_8b cellP
+xl1i768 bl1_68 wl1_8 wl1_8b cellN
+xl1i769 bl1_69 wl1_8 wl1_8b cellN
+xl1i770 bl1_70 wl1_8 wl1_8b cellP
+xl1i771 bl1_71 wl1_8 wl1_8b cellN
+xl1i772 bl1_72 wl1_8 wl1_8b cellP
+xl1i773 bl1_73 wl1_8 wl1_8b cellN
+xl1i774 bl1_74 wl1_8 wl1_8b cellN
+xl1i775 bl1_75 wl1_8 wl1_8b cellN
+xl1i776 bl1_76 wl1_8 wl1_8b cellN
+xl1i777 bl1_77 wl1_8 wl1_8b cellN
+xl1i778 bl1_78 wl1_8 wl1_8b cellN
+xl1i779 bl1_79 wl1_8 wl1_8b cellN
+xl1i780 bl1_80 wl1_8 wl1_8b cellP
+xl1i781 bl1_81 wl1_8 wl1_8b cellN
+xl1i782 bl1_82 wl1_8 wl1_8b cellN
+xl1i783 bl1_83 wl1_8 wl1_8b cellP
+xl1i784 bl1_84 wl1_8 wl1_8b cellN
+xl1i785 bl1_85 wl1_8 wl1_8b cellN
+xl1i786 bl1_86 wl1_8 wl1_8b cellN
+xl1i787 bl1_87 wl1_8 wl1_8b cellN
+xl1i788 bl1_88 wl1_8 wl1_8b cellN
+xl1i789 bl1_89 wl1_8 wl1_8b cellN
+xl1i790 bl1_90 wl1_8 wl1_8b cellN
+xl1i791 bl1_91 wl1_8 wl1_8b cellN
+xl1i792 bl1_92 wl1_8 wl1_8b cellP
+xl1i793 bl1_93 wl1_8 wl1_8b cellN
+xl1i794 bl1_94 wl1_8 wl1_8b cellN
+xl1i795 bl1_95 wl1_8 wl1_8b cellN
+xl1i796 bl1_96 wl1_8 wl1_8b cellP
+xl1i797 bl1_97 wl1_8 wl1_8b cellN
+xl1i798 bl1_98 wl1_8 wl1_8b cellP
+xl1i799 bl1_99 wl1_8 wl1_8b cellP
+xl1i800 bl1_100 wl1_8 wl1_8b cellP
+xl1Subtractor1 wl2_1 wl2_1b vb net137 bl1_1 INVA_iris_1 
+xl1Subtractor2 wl2_2 wl2_2b vb net137 bl1_2 INVA_iris_1 
+xl1Subtractor3 wl2_3 wl2_3b vb net137 bl1_3 INVA_iris_1 
+xl1Subtractor4 wl2_4 wl2_4b vb net137 bl1_4 INVA_iris_1 
+xl1Subtractor5 wl2_5 wl2_5b vb net137 bl1_5 INVA_iris_1 
+xl1Subtractor6 wl2_6 wl2_6b vb net137 bl1_6 INVA_iris_1 
+xl1Subtractor7 wl2_7 wl2_7b vb net137 bl1_7 INVA_iris_1 
+xl1Subtractor8 wl2_8 wl2_8b vb net137 bl1_8 INVA_iris_1 
+xl1Subtractor9 wl2_9 wl2_9b vb net137 bl1_9 INVA_iris_1 
+xl1Subtractor10 wl2_10 wl2_10b vb net137 bl1_10 INVA_iris_1 
+xl1Subtractor11 wl2_11 wl2_11b vb net137 bl1_11 INVA_iris_1 
+xl1Subtractor12 wl2_12 wl2_12b vb net137 bl1_12 INVA_iris_1 
+xl1Subtractor13 wl2_13 wl2_13b vb net137 bl1_13 INVA_iris_1 
+xl1Subtractor14 wl2_14 wl2_14b vb net137 bl1_14 INVA_iris_1 
+xl1Subtractor15 wl2_15 wl2_15b vb net137 bl1_15 INVA_iris_1 
+xl1Subtractor16 wl2_16 wl2_16b vb net137 bl1_16 INVA_iris_1 
+xl1Subtractor17 wl2_17 wl2_17b vb net137 bl1_17 INVA_iris_1 
+xl1Subtractor18 wl2_18 wl2_18b vb net137 bl1_18 INVA_iris_1 
+xl1Subtractor19 wl2_19 wl2_19b vb net137 bl1_19 INVA_iris_1 
+xl1Subtractor20 wl2_20 wl2_20b vb net137 bl1_20 INVA_iris_1 
+xl1Subtractor21 wl2_21 wl2_21b vb net137 bl1_21 INVA_iris_1 
+xl1Subtractor22 wl2_22 wl2_22b vb net137 bl1_22 INVA_iris_1 
+xl1Subtractor23 wl2_23 wl2_23b vb net137 bl1_23 INVA_iris_1 
+xl1Subtractor24 wl2_24 wl2_24b vb net137 bl1_24 INVA_iris_1 
+xl1Subtractor25 wl2_25 wl2_25b vb net137 bl1_25 INVA_iris_1 
+xl1Subtractor26 wl2_26 wl2_26b vb net137 bl1_26 INVA_iris_1 
+xl1Subtractor27 wl2_27 wl2_27b vb net137 bl1_27 INVA_iris_1 
+xl1Subtractor28 wl2_28 wl2_28b vb net137 bl1_28 INVA_iris_1 
+xl1Subtractor29 wl2_29 wl2_29b vb net137 bl1_29 INVA_iris_1 
+xl1Subtractor30 wl2_30 wl2_30b vb net137 bl1_30 INVA_iris_1 
+xl1Subtractor31 wl2_31 wl2_31b vb net137 bl1_31 INVA_iris_1 
+xl1Subtractor32 wl2_32 wl2_32b vb net137 bl1_32 INVA_iris_1 
+xl1Subtractor33 wl2_33 wl2_33b vb net137 bl1_33 INVA_iris_1 
+xl1Subtractor34 wl2_34 wl2_34b vb net137 bl1_34 INVA_iris_1 
+xl1Subtractor35 wl2_35 wl2_35b vb net137 bl1_35 INVA_iris_1 
+xl1Subtractor36 wl2_36 wl2_36b vb net137 bl1_36 INVA_iris_1 
+xl1Subtractor37 wl2_37 wl2_37b vb net137 bl1_37 INVA_iris_1 
+xl1Subtractor38 wl2_38 wl2_38b vb net137 bl1_38 INVA_iris_1 
+xl1Subtractor39 wl2_39 wl2_39b vb net137 bl1_39 INVA_iris_1 
+xl1Subtractor40 wl2_40 wl2_40b vb net137 bl1_40 INVA_iris_1 
+xl1Subtractor41 wl2_41 wl2_41b vb net137 bl1_41 INVA_iris_1 
+xl1Subtractor42 wl2_42 wl2_42b vb net137 bl1_42 INVA_iris_1 
+xl1Subtractor43 wl2_43 wl2_43b vb net137 bl1_43 INVA_iris_1 
+xl1Subtractor44 wl2_44 wl2_44b vb net137 bl1_44 INVA_iris_1 
+xl1Subtractor45 wl2_45 wl2_45b vb net137 bl1_45 INVA_iris_1 
+xl1Subtractor46 wl2_46 wl2_46b vb net137 bl1_46 INVA_iris_1 
+xl1Subtractor47 wl2_47 wl2_47b vb net137 bl1_47 INVA_iris_1 
+xl1Subtractor48 wl2_48 wl2_48b vb net137 bl1_48 INVA_iris_1 
+xl1Subtractor49 wl2_49 wl2_49b vb net137 bl1_49 INVA_iris_1 
+xl1Subtractor50 wl2_50 wl2_50b vb net137 bl1_50 INVA_iris_1 
+xl1Subtractor51 wl2_51 wl2_51b vb net137 bl1_51 INVA_iris_1 
+xl1Subtractor52 wl2_52 wl2_52b vb net137 bl1_52 INVA_iris_1 
+xl1Subtractor53 wl2_53 wl2_53b vb net137 bl1_53 INVA_iris_1 
+xl1Subtractor54 wl2_54 wl2_54b vb net137 bl1_54 INVA_iris_1 
+xl1Subtractor55 wl2_55 wl2_55b vb net137 bl1_55 INVA_iris_1 
+xl1Subtractor56 wl2_56 wl2_56b vb net137 bl1_56 INVA_iris_1 
+xl1Subtractor57 wl2_57 wl2_57b vb net137 bl1_57 INVA_iris_1 
+xl1Subtractor58 wl2_58 wl2_58b vb net137 bl1_58 INVA_iris_1 
+xl1Subtractor59 wl2_59 wl2_59b vb net137 bl1_59 INVA_iris_1 
+xl1Subtractor60 wl2_60 wl2_60b vb net137 bl1_60 INVA_iris_1 
+xl1Subtractor61 wl2_61 wl2_61b vb net137 bl1_61 INVA_iris_1 
+xl1Subtractor62 wl2_62 wl2_62b vb net137 bl1_62 INVA_iris_1 
+xl1Subtractor63 wl2_63 wl2_63b vb net137 bl1_63 INVA_iris_1 
+xl1Subtractor64 wl2_64 wl2_64b vb net137 bl1_64 INVA_iris_1 
+xl1Subtractor65 wl2_65 wl2_65b vb net137 bl1_65 INVA_iris_1 
+xl1Subtractor66 wl2_66 wl2_66b vb net137 bl1_66 INVA_iris_1 
+xl1Subtractor67 wl2_67 wl2_67b vb net137 bl1_67 INVA_iris_1 
+xl1Subtractor68 wl2_68 wl2_68b vb net137 bl1_68 INVA_iris_1 
+xl1Subtractor69 wl2_69 wl2_69b vb net137 bl1_69 INVA_iris_1 
+xl1Subtractor70 wl2_70 wl2_70b vb net137 bl1_70 INVA_iris_1 
+xl1Subtractor71 wl2_71 wl2_71b vb net137 bl1_71 INVA_iris_1 
+xl1Subtractor72 wl2_72 wl2_72b vb net137 bl1_72 INVA_iris_1 
+xl1Subtractor73 wl2_73 wl2_73b vb net137 bl1_73 INVA_iris_1 
+xl1Subtractor74 wl2_74 wl2_74b vb net137 bl1_74 INVA_iris_1 
+xl1Subtractor75 wl2_75 wl2_75b vb net137 bl1_75 INVA_iris_1 
+xl1Subtractor76 wl2_76 wl2_76b vb net137 bl1_76 INVA_iris_1 
+xl1Subtractor77 wl2_77 wl2_77b vb net137 bl1_77 INVA_iris_1 
+xl1Subtractor78 wl2_78 wl2_78b vb net137 bl1_78 INVA_iris_1 
+xl1Subtractor79 wl2_79 wl2_79b vb net137 bl1_79 INVA_iris_1 
+xl1Subtractor80 wl2_80 wl2_80b vb net137 bl1_80 INVA_iris_1 
+xl1Subtractor81 wl2_81 wl2_81b vb net137 bl1_81 INVA_iris_1 
+xl1Subtractor82 wl2_82 wl2_82b vb net137 bl1_82 INVA_iris_1 
+xl1Subtractor83 wl2_83 wl2_83b vb net137 bl1_83 INVA_iris_1 
+xl1Subtractor84 wl2_84 wl2_84b vb net137 bl1_84 INVA_iris_1 
+xl1Subtractor85 wl2_85 wl2_85b vb net137 bl1_85 INVA_iris_1 
+xl1Subtractor86 wl2_86 wl2_86b vb net137 bl1_86 INVA_iris_1 
+xl1Subtractor87 wl2_87 wl2_87b vb net137 bl1_87 INVA_iris_1 
+xl1Subtractor88 wl2_88 wl2_88b vb net137 bl1_88 INVA_iris_1 
+xl1Subtractor89 wl2_89 wl2_89b vb net137 bl1_89 INVA_iris_1 
+xl1Subtractor90 wl2_90 wl2_90b vb net137 bl1_90 INVA_iris_1 
+xl1Subtractor91 wl2_91 wl2_91b vb net137 bl1_91 INVA_iris_1 
+xl1Subtractor92 wl2_92 wl2_92b vb net137 bl1_92 INVA_iris_1 
+xl1Subtractor93 wl2_93 wl2_93b vb net137 bl1_93 INVA_iris_1 
+xl1Subtractor94 wl2_94 wl2_94b vb net137 bl1_94 INVA_iris_1 
+xl1Subtractor95 wl2_95 wl2_95b vb net137 bl1_95 INVA_iris_1 
+xl1Subtractor96 wl2_96 wl2_96b vb net137 bl1_96 INVA_iris_1 
+xl1Subtractor97 wl2_97 wl2_97b vb net137 bl1_97 INVA_iris_1 
+xl1Subtractor98 wl2_98 wl2_98b vb net137 bl1_98 INVA_iris_1 
+xl1Subtractor99 wl2_99 wl2_99b vb net137 bl1_99 INVA_iris_1 
+xl1Subtractor100 wl2_100 wl2_100b vb net137 bl1_100 INVA_iris_1 
+xl2i1 bl2_1 wl2_1 wl2_1b cellN
+xl2i2 bl2_2 wl2_1 wl2_1b cellN
+xl2i3 bl2_3 wl2_1 wl2_1b cellP
+xl2i4 bl2_1 wl2_2 wl2_2b cellN
+xl2i5 bl2_2 wl2_2 wl2_2b cellP
+xl2i6 bl2_3 wl2_2 wl2_2b cellN
+xl2i7 bl2_1 wl2_3 wl2_3b cellP
+xl2i8 bl2_2 wl2_3 wl2_3b cellN
+xl2i9 bl2_3 wl2_3 wl2_3b cellP
+xl2i10 bl2_1 wl2_4 wl2_4b cellP
+xl2i11 bl2_2 wl2_4 wl2_4b cellP
+xl2i12 bl2_3 wl2_4 wl2_4b cellP
+xl2i13 bl2_1 wl2_5 wl2_5b cellP
+xl2i14 bl2_2 wl2_5 wl2_5b cellN
+xl2i15 bl2_3 wl2_5 wl2_5b cellP
+xl2i16 bl2_1 wl2_6 wl2_6b cellP
+xl2i17 bl2_2 wl2_6 wl2_6b cellN
+xl2i18 bl2_3 wl2_6 wl2_6b cellP
+xl2i19 bl2_1 wl2_7 wl2_7b cellP
+xl2i20 bl2_2 wl2_7 wl2_7b cellP
+xl2i21 bl2_3 wl2_7 wl2_7b cellN
+xl2i22 bl2_1 wl2_8 wl2_8b cellP
+xl2i23 bl2_2 wl2_8 wl2_8b cellP
+xl2i24 bl2_3 wl2_8 wl2_8b cellN
+xl2i25 bl2_1 wl2_9 wl2_9b cellN
+xl2i26 bl2_2 wl2_9 wl2_9b cellN
+xl2i27 bl2_3 wl2_9 wl2_9b cellN
+xl2i28 bl2_1 wl2_10 wl2_10b cellN
+xl2i29 bl2_2 wl2_10 wl2_10b cellP
+xl2i30 bl2_3 wl2_10 wl2_10b cellP
+xl2i31 bl2_1 wl2_11 wl2_11b cellN
+xl2i32 bl2_2 wl2_11 wl2_11b cellN
+xl2i33 bl2_3 wl2_11 wl2_11b cellP
+xl2i34 bl2_1 wl2_12 wl2_12b cellP
+xl2i35 bl2_2 wl2_12 wl2_12b cellP
+xl2i36 bl2_3 wl2_12 wl2_12b cellN
+xl2i37 bl2_1 wl2_13 wl2_13b cellP
+xl2i38 bl2_2 wl2_13 wl2_13b cellN
+xl2i39 bl2_3 wl2_13 wl2_13b cellN
+xl2i40 bl2_1 wl2_14 wl2_14b cellP
+xl2i41 bl2_2 wl2_14 wl2_14b cellP
+xl2i42 bl2_3 wl2_14 wl2_14b cellP
+xl2i43 bl2_1 wl2_15 wl2_15b cellN
+xl2i44 bl2_2 wl2_15 wl2_15b cellP
+xl2i45 bl2_3 wl2_15 wl2_15b cellN
+xl2i46 bl2_1 wl2_16 wl2_16b cellP
+xl2i47 bl2_2 wl2_16 wl2_16b cellN
+xl2i48 bl2_3 wl2_16 wl2_16b cellP
+xl2i49 bl2_1 wl2_17 wl2_17b cellN
+xl2i50 bl2_2 wl2_17 wl2_17b cellN
+xl2i51 bl2_3 wl2_17 wl2_17b cellP
+xl2i52 bl2_1 wl2_18 wl2_18b cellN
+xl2i53 bl2_2 wl2_18 wl2_18b cellN
+xl2i54 bl2_3 wl2_18 wl2_18b cellP
+xl2i55 bl2_1 wl2_19 wl2_19b cellP
+xl2i56 bl2_2 wl2_19 wl2_19b cellN
+xl2i57 bl2_3 wl2_19 wl2_19b cellP
+xl2i58 bl2_1 wl2_20 wl2_20b cellN
+xl2i59 bl2_2 wl2_20 wl2_20b cellP
+xl2i60 bl2_3 wl2_20 wl2_20b cellN
+xl2i61 bl2_1 wl2_21 wl2_21b cellP
+xl2i62 bl2_2 wl2_21 wl2_21b cellN
+xl2i63 bl2_3 wl2_21 wl2_21b cellN
+xl2i64 bl2_1 wl2_22 wl2_22b cellP
+xl2i65 bl2_2 wl2_22 wl2_22b cellN
+xl2i66 bl2_3 wl2_22 wl2_22b cellN
+xl2i67 bl2_1 wl2_23 wl2_23b cellP
+xl2i68 bl2_2 wl2_23 wl2_23b cellP
+xl2i69 bl2_3 wl2_23 wl2_23b cellP
+xl2i70 bl2_1 wl2_24 wl2_24b cellP
+xl2i71 bl2_2 wl2_24 wl2_24b cellP
+xl2i72 bl2_3 wl2_24 wl2_24b cellP
+xl2i73 bl2_1 wl2_25 wl2_25b cellN
+xl2i74 bl2_2 wl2_25 wl2_25b cellN
+xl2i75 bl2_3 wl2_25 wl2_25b cellP
+xl2i76 bl2_1 wl2_26 wl2_26b cellP
+xl2i77 bl2_2 wl2_26 wl2_26b cellP
+xl2i78 bl2_3 wl2_26 wl2_26b cellP
+xl2i79 bl2_1 wl2_27 wl2_27b cellP
+xl2i80 bl2_2 wl2_27 wl2_27b cellN
+xl2i81 bl2_3 wl2_27 wl2_27b cellP
+xl2i82 bl2_1 wl2_28 wl2_28b cellN
+xl2i83 bl2_2 wl2_28 wl2_28b cellP
+xl2i84 bl2_3 wl2_28 wl2_28b cellN
+xl2i85 bl2_1 wl2_29 wl2_29b cellP
+xl2i86 bl2_2 wl2_29 wl2_29b cellP
+xl2i87 bl2_3 wl2_29 wl2_29b cellN
+xl2i88 bl2_1 wl2_30 wl2_30b cellN
+xl2i89 bl2_2 wl2_30 wl2_30b cellP
+xl2i90 bl2_3 wl2_30 wl2_30b cellP
+xl2i91 bl2_1 wl2_31 wl2_31b cellP
+xl2i92 bl2_2 wl2_31 wl2_31b cellN
+xl2i93 bl2_3 wl2_31 wl2_31b cellP
+xl2i94 bl2_1 wl2_32 wl2_32b cellN
+xl2i95 bl2_2 wl2_32 wl2_32b cellP
+xl2i96 bl2_3 wl2_32 wl2_32b cellP
+xl2i97 bl2_1 wl2_33 wl2_33b cellN
+xl2i98 bl2_2 wl2_33 wl2_33b cellP
+xl2i99 bl2_3 wl2_33 wl2_33b cellP
+xl2i100 bl2_1 wl2_34 wl2_34b cellP
+xl2i101 bl2_2 wl2_34 wl2_34b cellN
+xl2i102 bl2_3 wl2_34 wl2_34b cellP
+xl2i103 bl2_1 wl2_35 wl2_35b cellN
+xl2i104 bl2_2 wl2_35 wl2_35b cellP
+xl2i105 bl2_3 wl2_35 wl2_35b cellP
+xl2i106 bl2_1 wl2_36 wl2_36b cellN
+xl2i107 bl2_2 wl2_36 wl2_36b cellP
+xl2i108 bl2_3 wl2_36 wl2_36b cellP
+xl2i109 bl2_1 wl2_37 wl2_37b cellN
+xl2i110 bl2_2 wl2_37 wl2_37b cellN
+xl2i111 bl2_3 wl2_37 wl2_37b cellP
+xl2i112 bl2_1 wl2_38 wl2_38b cellP
+xl2i113 bl2_2 wl2_38 wl2_38b cellP
+xl2i114 bl2_3 wl2_38 wl2_38b cellN
+xl2i115 bl2_1 wl2_39 wl2_39b cellP
+xl2i116 bl2_2 wl2_39 wl2_39b cellP
+xl2i117 bl2_3 wl2_39 wl2_39b cellN
+xl2i118 bl2_1 wl2_40 wl2_40b cellN
+xl2i119 bl2_2 wl2_40 wl2_40b cellN
+xl2i120 bl2_3 wl2_40 wl2_40b cellP
+xl2i121 bl2_1 wl2_41 wl2_41b cellP
+xl2i122 bl2_2 wl2_41 wl2_41b cellP
+xl2i123 bl2_3 wl2_41 wl2_41b cellN
+xl2i124 bl2_1 wl2_42 wl2_42b cellP
+xl2i125 bl2_2 wl2_42 wl2_42b cellN
+xl2i126 bl2_3 wl2_42 wl2_42b cellN
+xl2i127 bl2_1 wl2_43 wl2_43b cellP
+xl2i128 bl2_2 wl2_43 wl2_43b cellN
+xl2i129 bl2_3 wl2_43 wl2_43b cellN
+xl2i130 bl2_1 wl2_44 wl2_44b cellN
+xl2i131 bl2_2 wl2_44 wl2_44b cellN
+xl2i132 bl2_3 wl2_44 wl2_44b cellN
+xl2i133 bl2_1 wl2_45 wl2_45b cellN
+xl2i134 bl2_2 wl2_45 wl2_45b cellP
+xl2i135 bl2_3 wl2_45 wl2_45b cellN
+xl2i136 bl2_1 wl2_46 wl2_46b cellP
+xl2i137 bl2_2 wl2_46 wl2_46b cellP
+xl2i138 bl2_3 wl2_46 wl2_46b cellP
+xl2i139 bl2_1 wl2_47 wl2_47b cellP
+xl2i140 bl2_2 wl2_47 wl2_47b cellN
+xl2i141 bl2_3 wl2_47 wl2_47b cellP
+xl2i142 bl2_1 wl2_48 wl2_48b cellP
+xl2i143 bl2_2 wl2_48 wl2_48b cellP
+xl2i144 bl2_3 wl2_48 wl2_48b cellP
+xl2i145 bl2_1 wl2_49 wl2_49b cellN
+xl2i146 bl2_2 wl2_49 wl2_49b cellP
+xl2i147 bl2_3 wl2_49 wl2_49b cellP
+xl2i148 bl2_1 wl2_50 wl2_50b cellP
+xl2i149 bl2_2 wl2_50 wl2_50b cellP
+xl2i150 bl2_3 wl2_50 wl2_50b cellN
+xl2i151 bl2_1 wl2_51 wl2_51b cellP
+xl2i152 bl2_2 wl2_51 wl2_51b cellN
+xl2i153 bl2_3 wl2_51 wl2_51b cellP
+xl2i154 bl2_1 wl2_52 wl2_52b cellP
+xl2i155 bl2_2 wl2_52 wl2_52b cellP
+xl2i156 bl2_3 wl2_52 wl2_52b cellP
+xl2i157 bl2_1 wl2_53 wl2_53b cellN
+xl2i158 bl2_2 wl2_53 wl2_53b cellP
+xl2i159 bl2_3 wl2_53 wl2_53b cellN
+xl2i160 bl2_1 wl2_54 wl2_54b cellP
+xl2i161 bl2_2 wl2_54 wl2_54b cellP
+xl2i162 bl2_3 wl2_54 wl2_54b cellP
+xl2i163 bl2_1 wl2_55 wl2_55b cellN
+xl2i164 bl2_2 wl2_55 wl2_55b cellN
+xl2i165 bl2_3 wl2_55 wl2_55b cellN
+xl2i166 bl2_1 wl2_56 wl2_56b cellP
+xl2i167 bl2_2 wl2_56 wl2_56b cellN
+xl2i168 bl2_3 wl2_56 wl2_56b cellN
+xl2i169 bl2_1 wl2_57 wl2_57b cellP
+xl2i170 bl2_2 wl2_57 wl2_57b cellN
+xl2i171 bl2_3 wl2_57 wl2_57b cellN
+xl2i172 bl2_1 wl2_58 wl2_58b cellP
+xl2i173 bl2_2 wl2_58 wl2_58b cellP
+xl2i174 bl2_3 wl2_58 wl2_58b cellP
+xl2i175 bl2_1 wl2_59 wl2_59b cellP
+xl2i176 bl2_2 wl2_59 wl2_59b cellN
+xl2i177 bl2_3 wl2_59 wl2_59b cellN
+xl2i178 bl2_1 wl2_60 wl2_60b cellP
+xl2i179 bl2_2 wl2_60 wl2_60b cellP
+xl2i180 bl2_3 wl2_60 wl2_60b cellP
+xl2i181 bl2_1 wl2_61 wl2_61b cellP
+xl2i182 bl2_2 wl2_61 wl2_61b cellN
+xl2i183 bl2_3 wl2_61 wl2_61b cellP
+xl2i184 bl2_1 wl2_62 wl2_62b cellN
+xl2i185 bl2_2 wl2_62 wl2_62b cellP
+xl2i186 bl2_3 wl2_62 wl2_62b cellP
+xl2i187 bl2_1 wl2_63 wl2_63b cellN
+xl2i188 bl2_2 wl2_63 wl2_63b cellP
+xl2i189 bl2_3 wl2_63 wl2_63b cellN
+xl2i190 bl2_1 wl2_64 wl2_64b cellN
+xl2i191 bl2_2 wl2_64 wl2_64b cellP
+xl2i192 bl2_3 wl2_64 wl2_64b cellP
+xl2i193 bl2_1 wl2_65 wl2_65b cellN
+xl2i194 bl2_2 wl2_65 wl2_65b cellN
+xl2i195 bl2_3 wl2_65 wl2_65b cellN
+xl2i196 bl2_1 wl2_66 wl2_66b cellP
+xl2i197 bl2_2 wl2_66 wl2_66b cellP
+xl2i198 bl2_3 wl2_66 wl2_66b cellN
+xl2i199 bl2_1 wl2_67 wl2_67b cellP
+xl2i200 bl2_2 wl2_67 wl2_67b cellN
+xl2i201 bl2_3 wl2_67 wl2_67b cellP
+xl2i202 bl2_1 wl2_68 wl2_68b cellP
+xl2i203 bl2_2 wl2_68 wl2_68b cellP
+xl2i204 bl2_3 wl2_68 wl2_68b cellN
+xl2i205 bl2_1 wl2_69 wl2_69b cellN
+xl2i206 bl2_2 wl2_69 wl2_69b cellP
+xl2i207 bl2_3 wl2_69 wl2_69b cellN
+xl2i208 bl2_1 wl2_70 wl2_70b cellP
+xl2i209 bl2_2 wl2_70 wl2_70b cellN
+xl2i210 bl2_3 wl2_70 wl2_70b cellP
+xl2i211 bl2_1 wl2_71 wl2_71b cellN
+xl2i212 bl2_2 wl2_71 wl2_71b cellP
+xl2i213 bl2_3 wl2_71 wl2_71b cellN
+xl2i214 bl2_1 wl2_72 wl2_72b cellP
+xl2i215 bl2_2 wl2_72 wl2_72b cellP
+xl2i216 bl2_3 wl2_72 wl2_72b cellN
+xl2i217 bl2_1 wl2_73 wl2_73b cellP
+xl2i218 bl2_2 wl2_73 wl2_73b cellN
+xl2i219 bl2_3 wl2_73 wl2_73b cellP
+xl2i220 bl2_1 wl2_74 wl2_74b cellP
+xl2i221 bl2_2 wl2_74 wl2_74b cellP
+xl2i222 bl2_3 wl2_74 wl2_74b cellP
+xl2i223 bl2_1 wl2_75 wl2_75b cellP
+xl2i224 bl2_2 wl2_75 wl2_75b cellN
+xl2i225 bl2_3 wl2_75 wl2_75b cellN
+xl2i226 bl2_1 wl2_76 wl2_76b cellP
+xl2i227 bl2_2 wl2_76 wl2_76b cellP
+xl2i228 bl2_3 wl2_76 wl2_76b cellP
+xl2i229 bl2_1 wl2_77 wl2_77b cellP
+xl2i230 bl2_2 wl2_77 wl2_77b cellP
+xl2i231 bl2_3 wl2_77 wl2_77b cellP
+xl2i232 bl2_1 wl2_78 wl2_78b cellP
+xl2i233 bl2_2 wl2_78 wl2_78b cellP
+xl2i234 bl2_3 wl2_78 wl2_78b cellN
+xl2i235 bl2_1 wl2_79 wl2_79b cellP
+xl2i236 bl2_2 wl2_79 wl2_79b cellN
+xl2i237 bl2_3 wl2_79 wl2_79b cellP
+xl2i238 bl2_1 wl2_80 wl2_80b cellN
+xl2i239 bl2_2 wl2_80 wl2_80b cellP
+xl2i240 bl2_3 wl2_80 wl2_80b cellP
+xl2i241 bl2_1 wl2_81 wl2_81b cellN
+xl2i242 bl2_2 wl2_81 wl2_81b cellP
+xl2i243 bl2_3 wl2_81 wl2_81b cellP
+xl2i244 bl2_1 wl2_82 wl2_82b cellP
+xl2i245 bl2_2 wl2_82 wl2_82b cellP
+xl2i246 bl2_3 wl2_82 wl2_82b cellN
+xl2i247 bl2_1 wl2_83 wl2_83b cellP
+xl2i248 bl2_2 wl2_83 wl2_83b cellN
+xl2i249 bl2_3 wl2_83 wl2_83b cellN
+xl2i250 bl2_1 wl2_84 wl2_84b cellP
+xl2i251 bl2_2 wl2_84 wl2_84b cellP
+xl2i252 bl2_3 wl2_84 wl2_84b cellP
+xl2i253 bl2_1 wl2_85 wl2_85b cellN
+xl2i254 bl2_2 wl2_85 wl2_85b cellP
+xl2i255 bl2_3 wl2_85 wl2_85b cellP
+xl2i256 bl2_1 wl2_86 wl2_86b cellP
+xl2i257 bl2_2 wl2_86 wl2_86b cellN
+xl2i258 bl2_3 wl2_86 wl2_86b cellN
+xl2i259 bl2_1 wl2_87 wl2_87b cellP
+xl2i260 bl2_2 wl2_87 wl2_87b cellN
+xl2i261 bl2_3 wl2_87 wl2_87b cellP
+xl2i262 bl2_1 wl2_88 wl2_88b cellP
+xl2i263 bl2_2 wl2_88 wl2_88b cellN
+xl2i264 bl2_3 wl2_88 wl2_88b cellN
+xl2i265 bl2_1 wl2_89 wl2_89b cellP
+xl2i266 bl2_2 wl2_89 wl2_89b cellP
+xl2i267 bl2_3 wl2_89 wl2_89b cellP
+xl2i268 bl2_1 wl2_90 wl2_90b cellP
+xl2i269 bl2_2 wl2_90 wl2_90b cellP
+xl2i270 bl2_3 wl2_90 wl2_90b cellN
+xl2i271 bl2_1 wl2_91 wl2_91b cellP
+xl2i272 bl2_2 wl2_91 wl2_91b cellP
+xl2i273 bl2_3 wl2_91 wl2_91b cellP
+xl2i274 bl2_1 wl2_92 wl2_92b cellP
+xl2i275 bl2_2 wl2_92 wl2_92b cellP
+xl2i276 bl2_3 wl2_92 wl2_92b cellN
+xl2i277 bl2_1 wl2_93 wl2_93b cellP
+xl2i278 bl2_2 wl2_93 wl2_93b cellP
+xl2i279 bl2_3 wl2_93 wl2_93b cellN
+xl2i280 bl2_1 wl2_94 wl2_94b cellP
+xl2i281 bl2_2 wl2_94 wl2_94b cellP
+xl2i282 bl2_3 wl2_94 wl2_94b cellN
+xl2i283 bl2_1 wl2_95 wl2_95b cellP
+xl2i284 bl2_2 wl2_95 wl2_95b cellP
+xl2i285 bl2_3 wl2_95 wl2_95b cellN
+xl2i286 bl2_1 wl2_96 wl2_96b cellP
+xl2i287 bl2_2 wl2_96 wl2_96b cellN
+xl2i288 bl2_3 wl2_96 wl2_96b cellN
+xl2i289 bl2_1 wl2_97 wl2_97b cellP
+xl2i290 bl2_2 wl2_97 wl2_97b cellN
+xl2i291 bl2_3 wl2_97 wl2_97b cellP
+xl2i292 bl2_1 wl2_98 wl2_98b cellN
+xl2i293 bl2_2 wl2_98 wl2_98b cellN
+xl2i294 bl2_3 wl2_98 wl2_98b cellP
+xl2i295 bl2_1 wl2_99 wl2_99b cellN
+xl2i296 bl2_2 wl2_99 wl2_99b cellN
+xl2i297 bl2_3 wl2_99 wl2_99b cellP
+xl2i298 bl2_1 wl2_100 wl2_100b cellN
+xl2i299 bl2_2 wl2_100 wl2_100b cellN
+xl2i300 bl2_3 wl2_100 wl2_100b cellP
+r1 bl2_1 0 9e3
+r2 bl2_2 0 9e3
+r3 bl2_3 0 9e3
+xdbli1 net137 vdd 0 cellP
+xdbli2 net137 vdd 0 cellN
+xdbli3 net137 vdd 0 cellP
+xdbli4 net137 vdd 0 cellN
+xdbli5 net137 vdd 0 cellP
+xdbli6 net137 vdd 0 cellN
+xdbli7 net137 vdd 0 cellP
+xdbli8 net137 vdd 0 cellN
+rdummy net137 0 112e3
+
+.END
