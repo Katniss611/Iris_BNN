@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 # @Author  : Tian Hongrong
 # @Time    : 2023/1/13 20:20
-# @Function:
+# @Function: Generate netlist using I-V converter based on operational amplifier
+#            by including module_header_C.sp
+
 import numpy as np
 
-middle_weight = np.load('../../weight/middle_weight_100hid_2bit.npy', allow_pickle=True, encoding="latin1")
+middle_weight = np.load('../../optimizedWeight/2bit_90.6%/middle_weight_100hid_2bit.npy', allow_pickle=True, encoding="latin1")
 middle_weight = np.sign(middle_weight)
-output_weight = np.load('../../weight/output_weight_100hid_2bit.npy', allow_pickle=True, encoding="latin1")
+output_weight = np.load('../../optimizedWeight/2bit_90.6%/output_weight_100hid_2bit.npy', allow_pickle=True, encoding="latin1")
 output_weight = np.sign(output_weight)
 
 output_file = open("netlist", "w")
