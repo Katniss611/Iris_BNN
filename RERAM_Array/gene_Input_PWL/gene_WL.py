@@ -4,7 +4,8 @@
 # @Function: create stimulus file for Iris dataset with binary neural network(BNN) based circuit
 
 import numpy as np
-output_file = open("iris.inp", "w")
+# output_file = open("./I-V converter_based on_opamp/iris.inp", "w")
+output_file = open("./I-V converter_based_on_load_resistor/iris.inp", "w")
 
 """
     transient analysis and parameters setting
@@ -88,13 +89,20 @@ for i in range(1, 9):
 
 """
     add .meas command to monitor signal
+    load resistor as I-V converter and operational amplifier as I-V converter differ in monitor node,
+    one monitors node 'OUT1 ~ OUT3', the other is node 'BL2_1 ~ BL2_3'
 """
 
-# output_file.write("\n")
+output_file.write("\n")
 # for i in range(1, 151):
-#     output_file.write(".measure tran avgOut1_%d AVG v(OUT1) FROM = %du TO =%du\n" % (i, 800*i-1, 800*i))
-#     output_file.write(".measure tran avgOut2_%d AVG v(OUT2) FROM = %du TO =%du\n" % (i, 800 * i - 1, 800 * i))
-#     output_file.write(".measure tran avgOut3_%d AVG v(OUT3) FROM = %du TO =%du\n" % (i, 800 * i - 1, 800 * i))
+#     output_file.write(".measure tran avgOut1 AVG v(OUT1) FROM = %du TO =%du\n" % (800 * i - 1, 800 * i))
+#     output_file.write(".measure tran avgOut2 AVG v(OUT2) FROM = %du TO =%du\n" % (800 * i - 1, 800 * i))
+#     output_file.write(".measure tran avgOut3 AVG v(OUT3) FROM = %du TO =%du\n" % (800 * i - 1, 800 * i))
+
+for i in range(1, 151):
+    output_file.write(".measure tran avgBL2_1 AVG v(BL2_1) FROM = %du TO =%du\n" % (800 * i - 1, 800 * i))
+    output_file.write(".measure tran avgBL2_2 AVG v(BL2_2) FROM = %du TO =%du\n" % (800 * i - 1, 800 * i))
+    output_file.write(".measure tran avgBL2_3 AVG v(BL2_3) FROM = %du TO =%du\n" % (800 * i - 1, 800 * i))
 
 output_file.close()
 
