@@ -279,9 +279,9 @@ history = model.fit(input_train, correct_train,
 
 weight = model.get_weights()
 middle_weight = weight[0]
-np.save('middle_weight_100hid_2bit.npy', middle_weight)
+np.save('middle_weight_100hid_4bit.npy', middle_weight)
 output_weight = weight[2]
-np.save('output_weight_100hid_2bit.npy', output_weight)
+np.save('output_weight_100hid_4bit.npy', output_weight)
 
 
 score0 = model.evaluate(input_test, correct_test, verbose=0)
